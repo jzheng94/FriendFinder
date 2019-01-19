@@ -6,7 +6,7 @@ module.exports = app => {
         res.sendFile(path.join(__dirname + "/../public/survey.html"));
     });
 
-    //Routes to Home page
+    //Defaults to homepage regardless of what is entered unless already specified above
     app.use( (req, res) => {
         res.sendFile(path.join(__dirname + "/../public/home.html"));
     });
